@@ -1,5 +1,5 @@
 ##The function below creates and stores the values of the matrix
-CacheMatrix <- c(x = matrix()) {
+makeCacheMatrix <- c(x = matrix()) {
   inv <- NULL
   set <- function(y) {
     x <<- y
@@ -16,7 +16,7 @@ CacheMatrix <- c(x = matrix()) {
 
 ## The function below computes the inverse of the matrix if not yet done,
 ##then, it retrieves the inverse from the cache.
-CacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
   if (!is.null(inv)) {
     message("The data is being cached")
